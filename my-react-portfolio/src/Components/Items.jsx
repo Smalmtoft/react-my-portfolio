@@ -1,15 +1,17 @@
-import profilePicture from "../assets/sandra.jpg";
 import "../items.css";
 
-function Items () {
+function Items (props) {
 
 return (
 
     <div className="portfolio-item"> 
-        <img src={profilePicture} alt="" />
-        <h2 className="portfolio-name">Hello</h2>
-        <p className="portfolio-text">My name is Sandra</p>
-        <button className="portfolio-button">press the button</button>
+        <img className="portfolio-picture" src={props.portfolioPicture} alt="" />
+        <h2 className="portfolio-title">{props.title}</h2>
+        <p className="portfolio-text">{props.text}</p>
+        <p className="portfolio-tech">{props.tech}</p>
+        <a href={props.link} target="_blank">
+        <button className="portfolio-button">Go to GitHub repository</button>
+      </a>
     </div>
 
 );

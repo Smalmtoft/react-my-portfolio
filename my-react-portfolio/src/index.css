@@ -1,0 +1,8 @@
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
