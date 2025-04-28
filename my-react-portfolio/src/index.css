@@ -1,8 +1,101 @@
+.page-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #232323;
+}
+
+.navigation{
+  width: 100%
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  height: 50px;
+  width: 100%;
+  font-size: 12px;
+
+}
+
+.navigation-links ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 10px;
+  gap: 40px;
+}
+
+.navigation-links a{
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.navigation-links a:hover{
+  color: #a5a5a5;
+}
+
+
+.home-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-page-text{
+  margin: 50px 40px;
+}
+
 .portfolio-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: stretch;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.portfolio-single-item{
+  display: flex;
+  align-items: stretch;
+}
+
+.show-projects-button{
+  background-color: #232323;
+  color: #f1f1f1;
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.show-projects-button:hover{
+  transform: scale(1.03);
+}
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
