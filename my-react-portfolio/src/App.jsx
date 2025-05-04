@@ -11,14 +11,14 @@ import Contact from "./Pages/Contact.jsx";
 
 function App() {
   return<div className="page-content">
-  <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route path="/"element={<Home/>}/>
-      <Route path="/About"element={<About/>}/>
-      <Route path="/Contact"element={<Contact/>}/>
-    </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/"element={<Home/>}/>
+        <Route path="/About"element={<About/>}/>
+        <Route path="/Contact"element={<Contact/>}/>
+      </Routes>
+    </BrowserRouter>
   </div>
 
 }

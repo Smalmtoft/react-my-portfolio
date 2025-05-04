@@ -19,7 +19,7 @@
 }
 
 .portfolio-item:hover{
-/*    transform: scale(1.03); */
+    transform: scale(1.02);
 }
 
 
@@ -36,7 +36,7 @@
 .portfolio-text{
     font-size: 12px;
     line-height: 1.5;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .portfolio-tech{
@@ -59,7 +59,6 @@
 }
 
 .portfolio-button:hover{
-/*    background-color: #464646; */
     transform: scale(1.03);
 }
 

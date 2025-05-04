@@ -5,8 +5,12 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  line-height: 1.5;
   color: #232323;
 }
+
+
+/* NAVIGATION*/
 
 .navigation{
   width: 100%
@@ -29,6 +33,7 @@
   list-style: none;
   margin: 10px;
   gap: 40px;
+  padding-left: 0px;
 }
 
 .navigation-links a{
@@ -41,6 +46,8 @@
 }
 
 
+/* PAGE CONTENT */
+
 .home-page{
   display: flex;
   flex-direction: column;
@@ -50,6 +57,7 @@
 }
 
 .home-page-text{
+  width: 70%;
   margin: 50px 40px;
 }
 
@@ -98,4 +106,76 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/* POP UP */
+
+.modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 40px;
+  margin: 40px;
+  border: none;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  color: #888888;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.close-button:hover{
+  color: #232323;
+}
+
+
+/* SEARCH BAR */ 
+
+.search-input {
+  display: block;
+  background-color: #f1f1f1;
+  margin: 20px;
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.search-input:focus {
+  outline: none;
 }
